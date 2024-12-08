@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monty Hall Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Monty Hall Game</h1>
+    <p id="message">Choose a door to start the game!</p>
+    <div class="doors">
+      <img src="images/door_closed.jpg" id="door1" class="door" onclick="selectDoor(1)">
+      <img src="images/door_closed.jpg" id="door2" class="door" onclick="selectDoor(2)">
+      <img src="images/door_closed.jpg" id="door3" class="door" onclick="selectDoor(3)">
+    </div>
+    <button id="restart" onclick="restartGame()">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
